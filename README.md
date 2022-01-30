@@ -1,36 +1,25 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 ## Web Scraping en R
 
-<!-- badges: start -->
-<!-- badges: end -->
+El objetivo del repositorio “Web Scraping en R” es una breve
+introducción al scraping de servicios WMS Y WFS en páginas web de
+algunas instituciones del Perú, con el fin de visualizar dichos
+servicios en RStudio.
 
-The goal of web\_scraping\_R is to …
+Dichas páginas son:
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+-   Geoportales de IDE Perú
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+> “<https://www.geoidep.gob.pe/catalogo-nacional-de-servicios-web/servicios-de-publicacion-de-objetos-wfs>”
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+-   Autoridad Nacional del Agua
 
-You can also embed plots, for example:
+> “<https://www.idep.gob.pe/wms/wms_ana.html>”
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+-   SINIA - MINAM
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub.
+> “<https://sinia.minam.gob.pe/servicios-wms>”
+
+-   SONICS - PISCO - SENAMHI
+
+> “<ftp://r-publi_dgh2:s0loLectur%40@ftp.senamhi.gob.pe/>”
