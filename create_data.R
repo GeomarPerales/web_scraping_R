@@ -1,1 +1,3 @@
-dir.create("data")
+library(openxlsx)
+dir.create("data", showWarnings = FALSE)
+data <- write.xlsx(cars, "data/cars.xlsx")
