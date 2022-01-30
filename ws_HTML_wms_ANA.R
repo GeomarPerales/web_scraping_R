@@ -18,7 +18,7 @@ View(tabla_wms)
 
 descripcion <- as.character(tabla_wms$Descripcion)
 
-#Agrupando links de servicios WMS
+# Agrupando links de servicios WMS
 
 for (i in 1:length(tables[[1]])) {
   links[i] <- substr(descripcion[i], 1,
