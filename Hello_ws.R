@@ -1,1 +1,2 @@
 library(datasets)
+data("LakeHuron")
