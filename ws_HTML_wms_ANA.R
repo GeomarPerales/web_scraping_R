@@ -9,4 +9,16 @@ library(rlist)
 theurl <- getURL(url_ana_wms,.opts = list(ssl.verifypeer = FALSE) )
 tables <- readHTMLTable(theurl)
 tables <- list.clean(tables, fun = is.null, recursive = FALSE)
-n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))
+colnames(tables[[1]])
+
+colnames(tables[[1]]) <- c("Id", "Img_referencia", "Titulo",
+                           "Descripcion", "Servicio", "Escala")
+tabla_wms <- tables[[1]]
+View(tabla_wms)
+
+descripcion <- as.character(tabla_wms$Descripcion)
+
+for (i in 1:length(tables[[1]])) {
+  links[i] <- substr(descripcion[i], 1,
+                     which(strsplit(descripcion[i], "")[[1]] == "?")-1)
+}
